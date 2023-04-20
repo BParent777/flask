@@ -14,7 +14,7 @@ pipeline {
 
     stage('Build') {
       steps {
-        sh 'docker build -t bparent777/flask_app .'
+        sh 'docker build -t bparent777/flask-app .'
       }
     }
 
@@ -26,7 +26,7 @@ pipeline {
 
     stage('Docker Push') {
       steps {
-        sh 'docker push bparent777/flask_app'
+        sh 'docker push bparent777/flask-app'
       }
     }
 
